@@ -47,14 +47,14 @@ from models.openai_compat import (
 load_dotenv()
 
 # Backend Configuration
-BACKEND_TYPE = os.getenv("BACKEND_TYPE", "openrouter").lower()
+BACKEND_TYPE = os.getenv("BACKEND_TYPE", "vllm").lower()
 
 # OpenRouter Configuration
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 # vLLM Configuration
-VLLM_BASE_URL = os.getenv("VLLM_BASE_URL", "http://localhost:8000")
+VLLM_BASE_URL = os.getenv("VLLM_BASE_URL", "http://localhost:8001/v1")
 VLLM_API_KEY = os.getenv("VLLM_API_KEY", "")
 
 # General Configuration
