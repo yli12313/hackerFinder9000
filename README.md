@@ -4,5 +4,4 @@
 # What is this?
 
 
-
-Part of the apart hackathon
+Part of the def/acc Apart hackathon
