@@ -3,6 +3,7 @@ Comprehensive Attack Gene Pool for Evolutionary Threat Discovery.
 
 600+ human-labeled attack patterns organized by category.
 Each gene has:
+
 - pattern: The attack text
 - category: Human-readable classification
 - severity: 0.0-1.0 risk level

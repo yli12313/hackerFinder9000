@@ -1,11 +1,9 @@
 """
-Advanced File-Based Fingerprinting System for OpenSafety AI.
-
-Provides sophisticated content fingerprinting for detecting:
-- Similar content across requests (semantic similarity)
-- Fragment correlation (pieces of larger payloads)
-- Obfuscated duplicates (paraphrased malicious content)
-- Structural patterns (code, JSON, markup)
+file-based fingerprinting system for detecting:
+- similar content across requests (semantic similarity)
+- fragment correlation (pieces of larger payloads)
+- obfuscated duplicates (paraphrased malicious content)
+- structural patterns (code, JSON, markup)
 """
 
 import hashlib  # noqa: I001

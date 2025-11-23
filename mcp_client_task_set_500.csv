@@ -1,0 +1,501 @@
+task_id,category,task_description,input_prompt,output_criterion,expected_tool_calls,difficulty,tags
+1,code_generation,Generate a Python function to calculate fibonacci numbers,Write a Python function that calculates the nth fibonacci number using recursion,Function compiles without errors and returns correct fibonacci sequence,0,easy,python;algorithms;recursion
+2,code_generation,Create a REST API endpoint,Create a FastAPI endpoint that accepts POST requests with JSON data and returns a processed response,Valid FastAPI code with proper type hints and error handling,0,medium,python;api;fastapi
+3,web_search,Research current AI trends,What are the top 5 AI trends in 2025?,Response contains 5 distinct trends with brief descriptions,1,easy,research;ai;trends
+4,web_search,Find Python documentation,Find the official Python documentation for asyncio,Returns valid URL to Python asyncio documentation,1,easy,documentation;python
+5,web_reading,Extract article content,Read and summarize the main points from https://example.com/article,Summary contains key points from article in markdown format,1,medium,web;reading;summarization
+6,embeddings,Compare text similarity,Calculate the semantic similarity between 'machine learning' and 'artificial intelligence',Returns similarity score between 0 and 1,1,easy,embeddings;similarity;nlp
+7,embeddings,Cluster similar documents,Given 5 documents about different topics create semantic clusters,Groups documents by semantic similarity with cluster labels,1,medium,embeddings;clustering;nlp
+8,reranking,Sort search results by relevance,Rerank these 10 search results based on the query 'best python frameworks',Returns ordered list with most relevant results first,1,medium,reranking;search;relevance
+9,classification,Categorize text into topics,Classify this text into one of: Technology Business Sports Entertainment,Returns single category label with confidence score,1,easy,classification;nlp
+10,segmentation,Split document into semantic chunks,Break this 5000 word document into logical semantic sections,Returns list of text chunks with semantic boundaries,1,medium,segmentation;chunking;nlp
+11,code_analysis,Analyze code complexity,Analyze the time and space complexity of this sorting algorithm,Response includes Big O notation for time and space,0,medium,algorithms;complexity;analysis
+12,code_generation,Create a database schema,Design a PostgreSQL schema for an e-commerce application,Valid SQL CREATE TABLE statements with proper relationships,0,medium,sql;database;schema
+13,debugging,Fix a race condition,Identify and fix the race condition in this multi-threaded code,Explanation of race condition and corrected code,0,hard,concurrency;threading;debugging
+14,code_review,Review code quality,Review this Python code and suggest improvements,At least 3 specific improvement suggestions with examples,0,medium,code-review;best-practices
+15,web_search,Find academic papers,Search for recent papers on transformer architecture in NLP,Returns 3-5 academic paper citations with titles and links,1,medium,research;academic;nlp
+16,web_reading,Extract structured data,Extract all product information from this e-commerce page,Structured JSON with product name price description and images,1,medium,web;extraction;structured-data
+17,embeddings,Create semantic search index,Generate embeddings for 100 product descriptions for search,Returns embedding vectors for all products,1,medium,embeddings;search;indexing
+18,multi_tool,Research and summarize topic,Research quantum computing and create a comprehensive summary,Uses web search to find sources then summarizes key concepts,2,hard,research;multi-step;summarization
+19,multi_tool,Analyze and visualize data,Analyze this CSV data and describe key insights,Reads data calculates statistics and describes patterns,1,medium,data-analysis;statistics
+20,code_generation,Write unit tests,Create pytest unit tests for this Python function,Complete test suite with edge cases and assertions,0,medium,testing;pytest;python
+21,code_generation,Implement design pattern,Implement the Observer design pattern in Python,Complete implementation with example usage,0,medium,design-patterns;oop;python
+22,web_search,Compare products,Compare the features of iPhone 15 vs Samsung S24,Structured comparison table with key differences,1,medium,research;comparison;products
+23,web_search,Find documentation examples,Find code examples for using FastAPI with WebSockets,Returns working code examples from documentation,1,medium,documentation;examples;api
+24,embeddings,Semantic document search,Find the most relevant document for this query from 50 documents,Returns top 3 documents ranked by semantic relevance,1,medium,search;embeddings;ranking
+25,code_generation,Create CLI application,Build a command-line tool that processes CSV files,Complete Python script with argparse and file handling,0,medium,cli;python;data-processing
+26,debugging,Fix memory leak,Identify and fix the memory leak in this Python application,Explanation of leak cause and corrected code,0,hard,debugging;memory;performance
+27,code_optimization,Optimize database query,Optimize this SQL query that takes 5 seconds to run,Improved query with explanation of optimizations,0,medium,sql;optimization;performance
+28,web_reading,Extract metadata,Extract all metadata from this article (author date tags),Structured JSON with complete metadata,1,easy,web;metadata;extraction
+29,classification,Multi-label classification,Classify this movie description into multiple genres,Returns list of applicable genre labels,1,medium,classification;multi-label;nlp
+30,segmentation,Extract key phrases,Segment this text and extract the most important phrases,Returns ranked list of key phrases,1,medium,segmentation;key-phrases;nlp
+31,code_generation,Build authentication system,Create a JWT-based authentication system in Python,Complete implementation with token generation and validation,0,hard,security;authentication;jwt
+32,web_search,Market research,Research the market size for AI chatbot industry,Returns market data with sources and projections,1,medium,research;market;business
+33,web_search,Find tutorials,Find beginner-friendly tutorials for learning React hooks,Returns 3-5 quality tutorial links with descriptions,1,easy,tutorials;learning;react
+34,embeddings,Duplicate detection,Find duplicate or near-duplicate documents in a collection,Returns pairs of similar documents with similarity scores,1,medium,embeddings;deduplication;similarity
+35,reranking,Improve search quality,Rerank these FAQ answers based on user query relevance,Returns reordered answers with relevance scores,1,medium,reranking;search;faq
+36,code_generation,Create data pipeline,Build an ETL pipeline that processes JSON data,Complete pipeline with extract transform and load stages,0,hard,data-engineering;etl;pipeline
+37,multi_tool,Competitor analysis,Analyze competitors and create comparison report,Uses search and reading to gather data then analyzes,3,hard,research;analysis;business
+38,code_generation,Implement caching layer,Add Redis caching to this Python application,Complete caching implementation with TTL and invalidation,0,medium,caching;redis;performance
+39,debugging,Fix async race condition,Debug this asyncio code with intermittent failures,Identified bug and corrected async implementation,0,hard,asyncio;debugging;concurrency
+40,code_review,Security audit,Review this code for security vulnerabilities,Identifies at least 3 security issues with fixes,0,hard,security;audit;vulnerabilities
+41,web_search,Find API documentation,Find the documentation for the OpenAI API,Returns link to official API documentation,1,easy,api;documentation;openai
+42,web_reading,Parse structured content,Extract all table data from this Wikipedia page,Returns structured data from all tables,1,medium,web;parsing;tables
+43,embeddings,Content recommendation,Recommend similar articles based on user reading history,Returns top 5 recommendations with similarity scores,1,medium,embeddings;recommendations;personalization
+44,classification,Sentiment analysis,Classify the sentiment of this product review,Returns sentiment label (positive/negative/neutral) with score,1,easy,classification;sentiment;nlp
+45,code_generation,Build web scraper,Create a web scraper that extracts product prices,Complete scraper with error handling and rate limiting,0,medium,scraping;python;web
+46,code_generation,Implement rate limiter,Create a token bucket rate limiter in Python,Complete implementation with configurable limits,0,medium,algorithms;rate-limiting;python
+47,web_search,Tech news summary,Find and summarize today's top technology news,Returns summary of 5 major tech news stories,1,medium,news;technology;summarization
+48,embeddings,Question answering,Answer this question using semantic search over documents,Returns accurate answer with source document reference,2,medium,qa;embeddings;retrieval
+49,reranking,Personalized search,Rerank search results based on user preferences,Returns personalized ranking considering user context,1,hard,reranking;personalization;search
+50,segmentation,Chapter extraction,Split this long document into logical chapters with titles,Returns chapters with appropriate titles and content,1,medium,segmentation;document-processing
+51,code_generation,Create microservice,Build a microservice for user authentication,Complete service with API endpoints and database,0,hard,microservices;api;architecture
+52,debugging,Fix performance issue,This function takes 10 seconds profile and optimize it,Identifies bottleneck and provides optimized version,0,hard,performance;profiling;optimization
+53,multi_tool,Technical documentation,Create technical documentation for this API,Uses code analysis and generates comprehensive docs,2,medium,documentation;api;technical-writing
+54,code_generation,Implement graph algorithm,Implement Dijkstra's shortest path algorithm,Complete implementation with test cases,0,medium,algorithms;graphs;python
+55,web_search,Find code libraries,Find Python libraries for PDF text extraction,Returns 3-5 libraries with brief descriptions,1,easy,libraries;python;pdf
+56,web_reading,Extract contact info,Extract all contact information from this company website,Returns structured contact data (email phone address),1,easy,web;extraction;contact-info
+57,embeddings,Semantic versioning,Find documents most similar to this specific version,Returns matching documents with version awareness,1,medium,embeddings;versioning;search
+58,classification,Topic modeling,Identify the main topics in this collection of documents,Returns list of topics with representative keywords,1,hard,classification;topic-modeling;nlp
+59,code_generation,Build REST client,Create a Python client for consuming a REST API,Complete client with all CRUD operations,0,medium,api;client;python
+60,code_generation,Implement retry logic,Add exponential backoff retry logic to this function,Complete implementation with configurable parameters,0,medium,reliability;error-handling;python
+61,web_search,Job market research,Research current salaries for Python developers in SF,Returns salary data with sources and ranges,1,medium,research;careers;salaries
+62,embeddings,Cross-lingual search,Find similar documents across English and Spanish,Returns relevant documents regardless of language,1,hard,embeddings;multilingual;search
+63,reranking,Context-aware ranking,Rerank these results considering conversation context,Returns context-aware ranking with explanations,1,hard,reranking;context;conversation
+64,code_generation,Create validation layer,Build input validation for API endpoints,Complete validation with error messages,0,medium,validation;api;security
+65,debugging,Fix deadlock,Identify and resolve deadlock in this concurrent system,Explanation of deadlock and corrected synchronization,0,hard,concurrency;deadlock;debugging
+66,multi_tool,Research proposal,Create a research proposal on AI safety,Uses search for background then drafts proposal,3,hard,research;writing;ai-safety
+67,code_generation,Build event system,Implement an event-driven architecture in Python,Complete event system with publishers and subscribers,0,hard,architecture;events;python
+68,web_search,Framework comparison,Compare Django vs FastAPI for building APIs,Detailed comparison of features pros and cons,1,medium,frameworks;comparison;python
+69,web_reading,Extract reviews,Extract all customer reviews from this product page,Returns list of reviews with ratings and text,1,medium,web;extraction;reviews
+70,embeddings,Anomaly detection,Detect outlier documents using embedding distance,Returns anomalous documents with anomaly scores,1,hard,embeddings;anomaly-detection;outliers
+71,classification,Named entity recognition,Extract all person and organization names from text,Returns structured list of entities by type,1,medium,ner;classification;nlp
+72,segmentation,Sentence boundary detection,Split this text into sentences handling edge cases,Returns accurately segmented sentences,1,easy,segmentation;sentences;nlp
+73,code_generation,Implement logging system,Create structured logging with multiple handlers,Complete logging configuration with rotation,0,medium,logging;observability;python
+74,code_generation,Build queue system,Implement a message queue using Redis,Complete queue with producer and consumer,0,medium,queues;redis;architecture
+75,debugging,Fix Unicode issues,Resolve encoding errors in this text processing code,Corrected code handling various encodings,0,medium,encoding;unicode;debugging
+76,web_search,Best practices research,Find best practices for Python async programming,Returns comprehensive best practices guide,1,medium,best-practices;async;python
+77,embeddings,Hierarchical clustering,Cluster documents into hierarchical categories,Returns dendrogram or tree of document clusters,1,hard,embeddings;clustering;hierarchy
+78,reranking,Multi-criteria ranking,Rank items by multiple criteria (relevance recency popularity),Returns ranking with score breakdown,1,hard,reranking;multi-criteria;ranking
+79,code_generation,Create configuration system,Build a hierarchical configuration loader,Complete system supporting multiple config formats,0,medium,configuration;python;yaml
+80,multi_tool,Competitive analysis,Analyze competitor products and pricing,Gathers data from multiple sources and analyzes,3,hard,research;analysis;competitive-intelligence
+81,code_generation,Implement circuit breaker,Create circuit breaker pattern for API calls,Complete implementation with state management,0,medium,resilience;patterns;python
+82,web_search,Technology stack research,Research the tech stack used by Netflix,Returns detailed technology stack information,1,medium,research;technology;architecture
+83,web_reading,Extract job postings,Extract job details from this careers page,Returns structured job listings with requirements,1,medium,web;extraction;jobs
+84,embeddings,Semantic deduplication,Remove semantically duplicate entries from dataset,Returns deduplicated dataset with merge logic,1,hard,embeddings;deduplication;data-cleaning
+85,classification,Intent classification,Classify user intent in chatbot conversation,Returns intent label with confidence score,1,medium,classification;intent;chatbots
+86,code_generation,Build caching strategy,Implement multi-level caching (memory Redis DB),Complete caching hierarchy with invalidation,0,hard,caching;architecture;performance
+87,debugging,Fix connection leak,Find and fix connection pool exhaustion issue,Identified leak and corrected resource management,0,hard,debugging;connections;resources
+88,code_generation,Create API gateway,Build an API gateway with routing and rate limiting,Complete gateway implementation,0,hard,api;gateway;architecture
+89,web_search,Industry trends,Research emerging trends in fintech industry,Returns comprehensive trend analysis,1,medium,research;fintech;trends
+90,embeddings,Document clustering by topic,Cluster news articles by topic using embeddings,Returns topic clusters with labels,1,medium,embeddings;clustering;topics
+91,reranking,Temporal reranking,Rerank results considering time decay,Returns ranking with recency boost,1,medium,reranking;temporal;ranking
+92,segmentation,Paragraph extraction,Extract well-formed paragraphs from messy text,Returns clean paragraph segmentation,1,easy,segmentation;paragraphs;text-processing
+93,code_generation,Implement OAuth flow,Create OAuth 2.0 authentication flow,Complete OAuth implementation with token refresh,0,hard,oauth;authentication;security
+94,code_generation,Build monitoring system,Create system for monitoring application health,Complete monitoring with metrics and alerts,0,hard,monitoring;observability;devops
+95,debugging,Fix cache invalidation,Debug incorrect cache invalidation logic,Corrected cache invalidation strategy,0,medium,caching;debugging;consistency
+96,multi_tool,Technical blog post,Write a technical blog post about microservices,Researches topic and writes comprehensive post,3,hard,writing;technical;microservices
+97,web_search,License information,Find licensing information for popular open-source projects,Returns license types and restrictions,1,easy,open-source;licenses;legal
+98,web_reading,Extract pricing,Extract pricing information from SaaS website,Returns structured pricing tiers and features,1,medium,web;extraction;pricing
+99,embeddings,Feature extraction,Extract semantic features from text for ML,Returns feature vectors for classification,1,medium,embeddings;features;ml
+100,classification,Spam detection,Classify emails as spam or legitimate,Returns classification with confidence score,1,medium,classification;spam;email
+101,code_generation,Create worker pool,Implement a thread pool for parallel processing,Complete thread pool with task queue,0,medium,concurrency;threading;python
+102,code_generation,Build state machine,Implement a finite state machine in Python,Complete FSM with transitions and states,0,medium,algorithms;state-machine;python
+103,web_search,Vulnerability research,Research known vulnerabilities for Python libraries,Returns CVE information and severity,1,medium,security;vulnerabilities;python
+104,embeddings,Content similarity matrix,Generate similarity matrix for document collection,Returns NxN similarity matrix,1,medium,embeddings;similarity;matrix
+105,reranking,User feedback ranking,Rerank results incorporating user feedback signals,Returns improved ranking based on feedback,1,hard,reranking;feedback;personalization
+106,code_generation,Implement data validator,Create comprehensive data validation framework,Complete validator with custom rules,0,medium,validation;data-quality;python
+107,debugging,Fix SQL injection,Identify and fix SQL injection vulnerabilities,Corrected code using parameterized queries,0,medium,security;sql-injection;debugging
+108,multi_tool,Market size estimation,Estimate market size for new product idea,Uses multiple data sources and calculations,3,hard,research;analysis;market-sizing
+109,code_generation,Build webhook handler,Create webhook receiver with signature verification,Complete handler with security checks,0,medium,webhooks;api;security
+110,web_search,Dataset discovery,Find datasets for training NLP models,Returns links to quality datasets with descriptions,1,medium,datasets;ml;nlp
+111,web_reading,Extract schema markup,Extract structured data (Schema.org) from webpage,Returns structured JSON-LD data,1,medium,web;schema;structured-data
+112,embeddings,Semantic text generation,Generate text semantically similar to examples,Returns generated text matching semantic profile,1,hard,embeddings;generation;nlp
+113,classification,Emotion detection,Detect emotions in text (joy anger sadness fear),Returns emotion labels with intensities,1,medium,classification;emotion;nlp
+114,segmentation,Topic segmentation,Segment document by topic changes,Returns segments with topic labels,1,hard,segmentation;topics;discourse
+115,code_generation,Create plugin system,Build extensible plugin architecture,Complete system with plugin loading and APIs,0,hard,architecture;plugins;extensibility
+116,code_generation,Implement backpressure,Add backpressure handling to streaming system,Complete implementation with flow control,0,hard,streaming;backpressure;architecture
+117,debugging,Fix race in distributed system,Debug race condition in distributed cache,Analysis and fix for distributed race condition,0,hard,distributed;debugging;consistency
+118,web_search,Conference information,Find information about upcoming AI conferences,Returns conference dates locations and CFPs,1,easy,research;conferences;ai
+119,embeddings,Cross-modal retrieval,Find images similar to text description using embeddings,Returns relevant images ranked by similarity,1,hard,embeddings;cross-modal;multimodal
+120,reranking,Diversity-aware ranking,Rerank results to maximize diversity,Returns diverse ranking avoiding redundancy,1,hard,reranking;diversity;ranking
+121,code_generation,Build search engine,Create full-text search engine with ranking,Complete search implementation with indexing,0,hard,search;indexing;algorithms
+122,multi_tool,Due diligence report,Create investment due diligence report for company,Researches company and creates analysis,4,hard,research;finance;analysis
+123,code_generation,Implement compression,Add compression middleware to API responses,Complete compression with content negotiation,0,medium,compression;api;performance
+124,web_search,Benchmark research,Find performance benchmarks for database systems,Returns benchmark data with comparisons,1,medium,research;benchmarks;databases
+125,web_reading,Extract author info,Extract author biography from article or book page,Returns structured author information,1,easy,web;extraction;metadata
+126,embeddings,Concept extraction,Extract high-level concepts from document collection,Returns concept embeddings and labels,1,hard,embeddings;concepts;knowledge
+127,classification,Genre classification,Classify books or movies into genres,Returns genre labels with confidence,1,medium,classification;genre;entertainment
+128,code_generation,Create feature flags,Build feature flag system with targeting,Complete system with flag management,0,medium,feature-flags;configuration;python
+129,debugging,Memory profiling,Profile memory usage and fix excessive allocation,Memory analysis and optimization,0,hard,profiling;memory;performance
+130,code_generation,Build notification system,Create multi-channel notification system,Complete system supporting email SMS push,0,hard,notifications;architecture;communication
+131,web_search,Learning path research,Find learning path for becoming ML engineer,Returns structured learning roadmap,1,medium,learning;career;ml
+132,embeddings,Query expansion,Expand search query using semantic similarity,Returns expanded query with related terms,1,medium,embeddings;query-expansion;search
+133,reranking,Explainable ranking,Rerank with explanations for each ranking decision,Returns ranking with human-readable explanations,1,hard,reranking;explainability;transparency
+134,segmentation,Code segmentation,Segment source code into logical functions,Returns function boundaries and signatures,1,medium,segmentation;code-analysis;parsing
+135,code_generation,Implement idempotency,Add idempotency keys to API endpoints,Complete implementation with deduplication,0,medium,api;idempotency;reliability
+136,multi_tool,Product requirements doc,Create PRD for new feature,Researches similar features and writes PRD,3,hard,product;documentation;requirements
+137,code_generation,Build recommendation engine,Create collaborative filtering recommendation system,Complete recommendation engine with scoring,0,hard,recommendations;ml;algorithms
+138,web_search,Salary comparison,Compare salaries across different tech companies,Returns structured salary comparison,1,medium,research;salaries;careers
+139,web_reading,Extract navigation,Extract site navigation structure from website,Returns hierarchical navigation tree,1,medium,web;extraction;navigation
+140,embeddings,Semantic caching,Implement semantic caching for similar queries,Returns cached results for semantically similar queries,1,hard,embeddings;caching;optimization
+141,classification,Language detection,Detect the language of input text,Returns language code with confidence,1,easy,classification;language;nlp
+142,code_generation,Create connection pool,Implement database connection pooling,Complete pool with connection management,0,medium,database;pooling;resources
+143,debugging,Fix timezone bug,Debug and fix timezone handling issues,Corrected timezone conversion logic,0,medium,datetime;timezones;debugging
+144,code_generation,Build workflow engine,Create workflow orchestration engine,Complete engine with DAG execution,0,hard,workflows;orchestration;architecture
+145,web_search,Tool comparison,Compare different project management tools,Returns detailed feature comparison,1,medium,tools;comparison;productivity
+146,embeddings,Transfer learning,Fine-tune embeddings for domain-specific task,Returns specialized embeddings with evaluation,1,hard,embeddings;transfer-learning;ml
+147,reranking,Learning to rank,Implement learning-to-rank algorithm,Returns trained ranking model,1,hard,reranking;ml;ranking
+148,code_generation,Implement saga pattern,Create saga pattern for distributed transactions,Complete saga with compensation logic,0,hard,distributed;saga;patterns
+149,multi_tool,Competitive pricing analysis,Analyze competitor pricing strategies,Gathers pricing data and creates analysis,3,hard,research;pricing;competitive
+150,code_generation,Build GraphQL API,Create GraphQL API with resolvers,Complete GraphQL implementation,0,hard,graphql;api;architecture
+151,web_search,Open source alternatives,Find open-source alternatives to commercial software,Returns list of alternatives with comparisons,1,medium,open-source;tools;alternatives
+152,web_reading,Extract FAQs,Extract FAQ content from help pages,Returns structured Q&A pairs,1,easy,web;extraction;faq
+153,embeddings,Contextual embeddings,Generate context-aware embeddings for words,Returns contextual word representations,1,hard,embeddings;context;nlp
+154,classification,Readability scoring,Score text readability (Flesch-Kincaid etc),Returns readability metrics and grade level,1,medium,classification;readability;text-analysis
+155,segmentation,Discourse parsing,Parse document discourse structure,Returns discourse tree with relations,1,hard,segmentation;discourse;linguistics
+156,code_generation,Create batch processor,Build system for batch job processing,Complete batch system with scheduling,0,hard,batch;processing;architecture
+157,debugging,Debug memory corruption,Find memory corruption in C extension,Analysis of memory issues and fixes,0,hard,debugging;memory;c-extensions
+158,code_generation,Implement CQRS,Create CQRS pattern implementation,Complete CQRS with command and query sides,0,hard,architecture;cqrs;patterns
+159,web_search,Integration options,Research integration options for Stripe API,Returns integration guides and SDKs,1,medium,api;integration;payments
+160,embeddings,Document versioning,Track document changes using embedding drift,Returns version history with semantic changes,1,hard,embeddings;versioning;tracking
+161,reranking,Multi-objective ranking,Rank by optimizing multiple objectives,Returns Pareto-optimal ranking,1,hard,reranking;optimization;multi-objective
+162,code_generation,Build metrics system,Create system for collecting and aggregating metrics,Complete metrics pipeline with storage,0,hard,metrics;observability;monitoring
+163,multi_tool,Investment analysis,Analyze potential investment opportunity,Researches company and creates investment thesis,4,hard,finance;analysis;investment
+164,code_generation,Implement sharding,Add database sharding to application,Complete sharding implementation with routing,0,hard,database;sharding;scalability
+165,web_search,Regulatory research,Research GDPR compliance requirements,Returns comprehensive GDPR requirements,1,hard,legal;compliance;gdpr
+166,web_reading,Extract specifications,Extract technical specifications from product page,Returns structured specs,1,medium,web;extraction;specifications
+167,embeddings,Zero-shot classification,Classify using embeddings without training data,Returns classifications using similarity,1,hard,embeddings;zero-shot;classification
+168,classification,Toxicity detection,Detect toxic or harmful content in text,Returns toxicity score and categories,1,medium,classification;moderation;safety
+169,code_generation,Create scheduler,Build job scheduler with cron-like syntax,Complete scheduler with recurring jobs,0,medium,scheduling;cron;automation
+170,debugging,Fix deadlock in async code,Debug deadlock in asyncio application,Analysis and corrected async code,0,hard,asyncio;deadlock;debugging
+171,code_generation,Build search autocomplete,Create autocomplete with fuzzy matching,Complete autocomplete with ranking,0,medium,search;autocomplete;ux
+172,web_search,Framework ecosystem,Research the Next.js ecosystem and plugins,Returns comprehensive ecosystem overview,1,medium,frameworks;ecosystem;javascript
+173,embeddings,Multilingual embeddings,Generate aligned embeddings across languages,Returns multilingual embedding space,1,hard,embeddings;multilingual;cross-lingual
+174,reranking,Session-based ranking,Rerank based on user session history,Returns session-aware personalized ranking,1,hard,reranking;session;personalization
+175,segmentation,Video segmentation,Segment video transcript into scenes,Returns scene boundaries with descriptions,1,medium,segmentation;video;transcripts
+176,code_generation,Implement versioning,Add API versioning to existing endpoints,Complete versioning strategy implementation,0,medium,api;versioning;compatibility
+177,multi_tool,Literature review,Create literature review on topic,Searches papers and synthesizes findings,4,hard,research;academic;synthesis
+178,code_generation,Build A/B testing framework,Create A/B testing infrastructure,Complete framework with variant assignment,0,hard,ab-testing;experimentation;analytics
+179,web_search,Cloud provider comparison,Compare AWS vs Azure vs GCP features,Returns detailed cloud provider comparison,1,medium,cloud;comparison;infrastructure
+180,web_reading,Extract changelog,Extract changelog or release notes from page,Returns structured changelog entries,1,medium,web;extraction;changelog
+181,embeddings,Bias detection,Detect bias in embeddings or models,Returns bias analysis and metrics,1,hard,embeddings;bias;fairness
+182,classification,Formality detection,Classify text formality level,Returns formality score and classification,1,medium,classification;style;nlp
+183,code_generation,Create message bus,Implement message bus for event-driven architecture,Complete message bus with routing,0,hard,messaging;events;architecture
+184,debugging,Debug distributed trace,Analyze distributed trace to find bottleneck,Identified bottleneck with optimization,0,hard,distributed;tracing;performance
+185,code_generation,Build health check system,Create comprehensive health check endpoints,Complete health checks with dependencies,0,medium,health-checks;monitoring;reliability
+186,web_search,Migration guide,Find migration guides from Python 2 to Python 3,Returns comprehensive migration resources,1,medium,migration;python;guides
+187,embeddings,Embedding compression,Compress embeddings while maintaining quality,Returns compressed embeddings with evaluation,1,hard,embeddings;compression;optimization
+188,reranking,Fairness-aware ranking,Rerank ensuring fairness across groups,Returns fair ranking with metrics,1,hard,reranking;fairness;ethics
+189,code_generation,Implement rate limiting,Add distributed rate limiting using Redis,Complete rate limiter with sliding window,0,hard,rate-limiting;redis;scalability
+190,multi_tool,Patent search,Search and analyze relevant patents,Searches patents and summarizes findings,3,hard,research;patents;legal
+191,code_generation,Build ETL framework,Create reusable ETL framework,Complete framework with connectors,0,hard,etl;data-engineering;framework
+192,web_search,Security advisories,Find recent security advisories for Node.js,Returns security advisories with CVEs,1,medium,security;nodejs;advisories
+193,web_reading,Extract menu items,Extract menu items from restaurant website,Returns structured menu with prices,1,easy,web;extraction;menu
+194,embeddings,Style transfer,Transfer writing style using embeddings,Returns text rewritten in target style,1,hard,embeddings;style;generation
+195,classification,Complexity scoring,Score code complexity automatically,Returns complexity metrics (cyclomatic etc),1,medium,classification;code-analysis;metrics
+196,segmentation,Email parsing,Parse email into header body signature,Returns structured email components,1,medium,segmentation;email;parsing
+197,code_generation,Create telemetry system,Build telemetry collection and analysis,Complete telemetry with dashboards,0,hard,telemetry;observability;analytics
+198,debugging,Fix N+1 query,Identify and fix N+1 query problem,Optimized query with explanation,0,medium,database;orm;performance
+199,code_generation,Implement SSO,Add single sign-on using SAML,Complete SSO implementation,0,hard,authentication;sso;saml
+200,web_search,Training resources,Find training resources for Kubernetes,Returns courses tutorials and documentation,1,easy,learning;kubernetes;devops
+201,embeddings,Continuous learning,Update embeddings with new data continuously,Returns updated embedding model,1,hard,embeddings;continual-learning;ml
+202,reranking,Contextual bandit ranking,Implement contextual bandit for ranking,Returns adaptive ranking with learning,1,hard,reranking;bandits;rl
+203,code_generation,Build CDC pipeline,Create change data capture pipeline,Complete CDC with event streaming,0,hard,cdc;data-engineering;streaming
+204,multi_tool,Feasibility study,Conduct feasibility study for project,Researches and analyzes project viability,4,hard,research;analysis;feasibility
+205,code_generation,Implement secrets management,Add secrets management using Vault,Complete secrets integration,0,hard,security;secrets;vault
+206,web_search,Community resources,Find developer community resources for Rust,Returns forums Discord channels and resources,1,easy,community;rust;learning
+207,web_reading,Extract events,Extract event information from calendar page,Returns structured event data,1,medium,web;extraction;events
+208,embeddings,Active learning,Select most informative samples using embeddings,Returns samples for labeling,1,hard,embeddings;active-learning;ml
+209,classification,Sarcasm detection,Detect sarcasm in text,Returns sarcasm classification with confidence,1,hard,classification;sarcasm;nlp
+210,segmentation,Argument mining,Extract arguments and their structure from text,Returns argument components and relations,1,hard,segmentation;argumentation;nlp
+211,code_generation,Create chaos testing,Build chaos engineering test framework,Complete framework for resilience testing,0,hard,testing;chaos-engineering;reliability
+212,debugging,Debug connection timeout,Analyze and fix intermittent timeouts,Root cause analysis and fix,0,medium,debugging;network;timeouts
+213,code_generation,Build recommendation API,Create API for personalized recommendations,Complete API with ranking algorithms,0,hard,api;recommendations;ml
+214,web_search,Certification info,Research cloud certification requirements,Returns certification paths and requirements,1,medium,certifications;cloud;career
+215,embeddings,Few-shot learning,Perform few-shot classification with embeddings,Returns classifications from few examples,1,hard,embeddings;few-shot;ml
+216,reranking,Counterfactual ranking,Generate counterfactual rankings for analysis,Returns alternative rankings with explanations,1,hard,reranking;counterfactual;analysis
+217,code_generation,Implement blue-green deployment,Create blue-green deployment automation,Complete deployment strategy,0,hard,deployment;devops;automation
+218,multi_tool,Environmental impact assessment,Assess environmental impact of product,Researches and calculates carbon footprint,3,hard,research;sustainability;analysis
+219,code_generation,Build feature store,Create ML feature store,Complete feature store with versioning,0,hard,ml;features;infrastructure
+220,web_search,API comparison,Compare different payment gateway APIs,Returns detailed API comparison,1,medium,api;payments;comparison
+221,web_reading,Extract testimonials,Extract customer testimonials from website,Returns structured testimonial data,1,easy,web;extraction;testimonials
+222,embeddings,Embedding visualization,Create 2D visualization of embedding space,Returns visualization of embeddings,1,medium,embeddings;visualization;tsne
+223,classification,Age appropriateness,Classify content age appropriateness,Returns age rating with reasoning,1,medium,classification;moderation;ratings
+224,code_generation,Create workflow API,Build API for workflow management,Complete workflow API with state management,0,hard,api;workflows;orchestration
+225,debugging,Debug CORS issues,Identify and fix CORS configuration problems,Corrected CORS setup with explanation,0,medium,debugging;cors;web
+226,code_generation,Implement GraphQL subscriptions,Add real-time subscriptions to GraphQL,Complete subscription implementation,0,hard,graphql;subscriptions;realtime
+227,web_search,Design patterns,Research microservices design patterns,Returns catalog of design patterns,1,medium,patterns;microservices;architecture
+228,embeddings,Domain adaptation,Adapt embeddings to specific domain,Returns domain-adapted embeddings,1,hard,embeddings;adaptation;transfer-learning
+229,reranking,Cascade ranking,Implement cascade ranking with multiple stages,Returns efficient multi-stage ranking,1,hard,reranking;cascade;optimization
+230,segmentation,Layout analysis,Analyze document layout structure,Returns layout regions and hierarchy,1,hard,segmentation;layout;document-analysis
+231,code_generation,Build experiment tracking,Create system for ML experiment tracking,Complete tracking with metrics and artifacts,0,hard,ml;experiments;mlops
+232,multi_tool,Risk assessment,Perform security risk assessment,Analyzes system and identifies risks,3,hard,security;risk;assessment
+233,code_generation,Implement canary deployment,Create canary deployment strategy,Complete canary implementation with metrics,0,hard,deployment;canary;devops
+234,web_search,Migration stories,Find case studies of cloud migrations,Returns migration case studies and lessons,1,medium,migration;cloud;case-studies
+235,web_reading,Extract metadata tags,Extract all meta tags from webpage,Returns structured metadata,1,easy,web;metadata;seo
+236,embeddings,Embedding calibration,Calibrate embedding similarities,Returns calibrated similarity scores,1,hard,embeddings;calibration;ml
+237,classification,Fake news detection,Detect potentially fake or misleading news,Returns credibility score with analysis,1,hard,classification;misinformation;nlp
+238,code_generation,Create backup system,Build automated backup and restore system,Complete backup system with scheduling,0,hard,backup;reliability;automation
+239,debugging,Debug SSL certificate,Troubleshoot SSL certificate validation errors,Analysis and fix for certificate issues,0,medium,debugging;ssl;security
+240,code_generation,Build payment processing,Integrate payment processing with Stripe,Complete payment flow with webhooks,0,hard,payments;stripe;integration
+241,web_search,Architecture examples,Find example architectures for event sourcing,Returns architecture diagrams and examples,1,medium,architecture;event-sourcing;examples
+242,embeddings,Semantic search with filters,Implement filtered semantic search,Returns relevant results matching filters,1,medium,embeddings;search;filtering
+243,reranking,Slate optimization,Optimize entire slate of recommendations,Returns optimized slate with diversity,1,hard,reranking;slate;optimization
+244,code_generation,Implement audit logging,Add comprehensive audit logging,Complete audit trail with tamper protection,0,hard,security;audit;compliance
+245,multi_tool,Customer journey mapping,Map and analyze customer journey,Creates comprehensive journey map,3,hard,ux;analysis;customer-experience
+246,code_generation,Build data catalog,Create data catalog with lineage tracking,Complete catalog with metadata management,0,hard,data-engineering;catalog;governance
+247,web_search,Performance optimization guides,Find performance optimization guides for React,Returns comprehensive optimization resources,1,medium,performance;react;optimization
+248,web_reading,Extract location data,Extract address and location from business page,Returns structured location data,1,easy,web;extraction;location
+249,embeddings,Semantic role labeling,Label semantic roles using embeddings,Returns semantic role annotations,1,hard,embeddings;srl;nlp
+250,classification,Difficulty estimation,Estimate task difficulty from description,Returns difficulty score and reasoning,1,medium,classification;estimation;task-analysis
+251,segmentation,Multi-document segmentation,Segment related sections across documents,Returns aligned segments from multiple docs,1,hard,segmentation;multi-document;alignment
+252,code_generation,Create streaming pipeline,Build real-time streaming data pipeline,Complete pipeline with Kafka or similar,0,hard,streaming;pipeline;real-time
+253,debugging,Debug memory fragmentation,Analyze and fix memory fragmentation,Analysis and optimization strategy,0,hard,debugging;memory;performance
+254,code_generation,Implement RBAC,Add role-based access control,Complete RBAC with permissions,0,hard,security;rbac;authorization
+255,web_search,Incident post-mortems,Find public incident post-mortems to learn from,Returns post-mortem reports and lessons,1,medium,incidents;sre;learning
+256,embeddings,Cross-domain transfer,Transfer embeddings across domains,Returns transferred embeddings with evaluation,1,hard,embeddings;transfer;cross-domain
+257,reranking,Position bias correction,Correct position bias in ranking,Returns debiased ranking,1,hard,reranking;bias;fairness
+258,code_generation,Build ML serving,Create model serving infrastructure,Complete serving with versioning,0,hard,ml;serving;infrastructure
+259,multi_tool,Sustainability report,Create sustainability report for company,Researches and compiles sustainability metrics,3,hard,sustainability;reporting;esg
+260,code_generation,Implement feature engineering,Build automated feature engineering pipeline,Complete pipeline with feature generation,0,hard,ml;features;automation
+261,web_search,Interview preparation,Find common interview questions for role,Returns structured interview prep guide,1,easy,career;interviews;preparation
+262,web_reading,Extract social links,Extract all social media links from website,Returns structured social media profiles,1,easy,web;extraction;social-media
+263,embeddings,Embedding ensemble,Combine multiple embedding models,Returns ensemble embeddings with improved quality,1,hard,embeddings;ensemble;ml
+264,classification,Urgency detection,Classify message urgency level,Returns urgency score and classification,1,medium,classification;prioritization;support
+265,code_generation,Create data quality checks,Build data quality validation framework,Complete validation with rules and alerts,0,medium,data-quality;validation;data-engineering
+266,debugging,Debug race in cache,Fix race condition in distributed cache,Analysis and corrected cache logic,0,hard,debugging;distributed;caching
+267,code_generation,Build search ranking,Create learning-to-rank search system,Complete ranking with training pipeline,0,hard,search;ranking;ml
+268,web_search,Cost optimization,Research cloud cost optimization strategies,Returns comprehensive cost optimization guide,1,medium,cloud;cost;optimization
+269,embeddings,Prompt engineering,Optimize prompts using embedding similarity,Returns optimized prompts with evaluation,1,hard,embeddings;prompts;optimization
+270,reranking,Exploration vs exploitation,Balance exploration and exploitation in ranking,Returns ranking with optimal balance,1,hard,reranking;exploration;bandits
+271,segmentation,Multi-modal segmentation,Segment content across text image video,Returns aligned segments across modalities,1,hard,segmentation;multimodal;alignment
+272,code_generation,Implement data versioning,Add version control for datasets,Complete versioning with diffs,0,hard,data-engineering;versioning;ml
+273,multi_tool,Brand analysis,Analyze brand perception and sentiment,Collects and analyzes brand mentions,3,hard,research;brand;sentiment
+274,code_generation,Build federated learning,Create federated learning system,Complete federation with privacy preservation,0,hard,ml;federated-learning;privacy
+275,web_search,Accessibility guidelines,Research WCAG accessibility requirements,Returns comprehensive accessibility guidelines,1,medium,accessibility;wcag;compliance
+276,web_reading,Extract press releases,Extract press release content and metadata,Returns structured press releases,1,medium,web;extraction;press-releases
+277,embeddings,Contrastive learning,Train embeddings with contrastive learning,Returns contrastive embeddings with evaluation,1,hard,embeddings;contrastive;ml
+278,classification,Clickbait detection,Detect clickbait headlines,Returns clickbait score and classification,1,medium,classification;clickbait;content-moderation
+279,code_generation,Create lineage tracking,Build data lineage tracking system,Complete lineage with visualization,0,hard,data-engineering;lineage;governance
+280,debugging,Debug DNS resolution,Troubleshoot DNS resolution failures,Analysis and resolution of DNS issues,0,medium,debugging;dns;networking
+281,code_generation,Implement model monitoring,Add ML model performance monitoring,Complete monitoring with drift detection,0,hard,ml;monitoring;mlops
+282,web_search,Tool recommendations,Find recommended tools for DevOps,Returns categorized tool recommendations,1,easy,tools;devops;recommendations
+283,embeddings,Meta-learning embeddings,Learn embeddings that transfer well,Returns meta-learned embeddings,1,hard,embeddings;meta-learning;transfer
+284,reranking,Budget-constrained ranking,Rank under computational budget constraint,Returns efficient ranking within budget,1,hard,reranking;efficiency;optimization
+285,code_generation,Build feature flags API,Create API for feature flag management,Complete API with targeting rules,0,hard,api;feature-flags;configuration
+286,multi_tool,Technology assessment,Assess technology for adoption,Researches technology and creates assessment,3,hard,research;technology;assessment
+287,code_generation,Implement differential privacy,Add differential privacy to analytics,Complete privacy-preserving analytics,0,hard,privacy;security;analytics
+288,web_search,Scaling case studies,Find case studies of scaling challenges,Returns scaling stories and solutions,1,medium,scaling;case-studies;architecture
+289,web_reading,Extract job requirements,Extract skills and requirements from job posting,Returns structured requirements,1,medium,web;extraction;jobs
+290,embeddings,Embedding interpretation,Interpret and explain embedding dimensions,Returns interpretable embedding analysis,1,hard,embeddings;interpretability;analysis
+291,classification,Writing quality,Assess writing quality and style,Returns quality metrics and suggestions,1,medium,classification;writing;quality
+292,segmentation,Cross-document coreference,Resolve entity references across documents,Returns coreference chains across docs,1,hard,segmentation;coreference;nlp
+293,code_generation,Create model registry,Build ML model registry system,Complete registry with versioning and metadata,0,hard,ml;registry;mlops
+294,debugging,Debug OOM error,Investigate and fix out-of-memory errors,Analysis and memory optimization,0,hard,debugging;memory;performance
+295,code_generation,Implement GraphQL federation,Add GraphQL federation across services,Complete federation with gateway,0,hard,graphql;federation;microservices
+296,web_search,Compliance requirements,Research PCI DSS compliance requirements,Returns comprehensive PCI compliance guide,1,hard,compliance;security;pci
+297,embeddings,Multimodal embeddings,Create unified embeddings for text and images,Returns multimodal embedding space,1,hard,embeddings;multimodal;cross-modal
+298,reranking,Cold start ranking,Handle cold start problem in ranking,Returns ranking strategy for new items,1,hard,reranking;cold-start;recommendations
+299,code_generation,Build real-time dashboard,Create real-time analytics dashboard,Complete dashboard with live updates,0,hard,analytics;dashboard;real-time
+300,multi_tool,Scenario planning,Create scenario planning analysis,Develops multiple future scenarios,4,hard,strategy;planning;forecasting
+301,code_generation,Implement model explainability,Add explainability to ML models,Complete explainability with visualizations,0,hard,ml;explainability;interpretability
+302,web_search,Migration checklist,Find checklist for Kubernetes migration,Returns comprehensive migration checklist,1,medium,migration;kubernetes;checklist
+303,web_reading,Extract opening hours,Extract business hours from website,Returns structured hours of operation,1,easy,web;extraction;hours
+304,embeddings,Adaptive embeddings,Create embeddings that adapt to context,Returns context-adaptive embeddings,1,hard,embeddings;adaptation;contextual
+305,classification,Misinformation detection,Detect potential misinformation,Returns credibility assessment,1,hard,classification;misinformation;fact-checking
+306,segmentation,Narrative structure,Extract narrative structure from story,Returns story structure with elements,1,hard,segmentation;narrative;literature
+307,code_generation,Create anomaly detection,Build anomaly detection system,Complete system with alerting,0,hard,ml;anomaly-detection;monitoring
+308,debugging,Debug serialization,Fix object serialization issues,Corrected serialization with explanation,0,medium,debugging;serialization;data
+309,code_generation,Implement content moderation,Add automated content moderation,Complete moderation with classification,0,hard,moderation;ml;safety
+310,web_search,Container security,Research container security best practices,Returns comprehensive security guidelines,1,medium,security;containers;docker
+311,embeddings,Embedding distillation,Distill large embedding model to smaller,Returns distilled embeddings with evaluation,1,hard,embeddings;distillation;compression
+312,reranking,Interactive ranking,Implement ranking with user interaction,Returns interactive ranking system,1,hard,reranking;interaction;ux
+313,code_generation,Build time series forecasting,Create forecasting system for time series,Complete forecasting with models,0,hard,ml;forecasting;time-series
+314,multi_tool,Product launch plan,Create comprehensive product launch plan,Researches market and creates strategy,4,hard,product;strategy;launch
+315,code_generation,Implement consent management,Add GDPR consent management,Complete consent system with preferences,0,hard,privacy;gdpr;compliance
+316,web_search,Architecture decision records,Find examples of ADRs for microservices,Returns ADR examples and templates,1,medium,architecture;adr;documentation
+317,web_reading,Extract schema data,Extract product schema from e-commerce page,Returns Schema.org structured data,1,medium,web;schema;structured-data
+318,embeddings,Incremental learning,Update embeddings incrementally with new data,Returns updated embeddings without retraining,1,hard,embeddings;incremental;online-learning
+319,classification,Controversy detection,Detect controversial topics in content,Returns controversy score and topics,1,hard,classification;controversy;content-analysis
+320,code_generation,Create drift detection,Build data drift detection system,Complete drift detection with alerts,0,hard,ml;drift;monitoring
+321,debugging,Debug circular dependency,Resolve circular import dependencies,Analysis and refactored code structure,0,medium,debugging;dependencies;architecture
+322,code_generation,Implement model A/B testing,Add A/B testing for ML models,Complete testing framework with metrics,0,hard,ml;ab-testing;experimentation
+323,web_search,Best practices architecture,Find best practices for event-driven architecture,Returns comprehensive best practices,1,medium,architecture;best-practices;events
+324,embeddings,Semantic code search,Enable semantic search over codebase,Returns relevant code using embeddings,1,hard,embeddings;code-search;developer-tools
+325,reranking,Reinforcement learning ranking,Use RL to optimize ranking policy,Returns trained RL ranking model,1,hard,reranking;rl;optimization
+326,segmentation,Meeting summarization,Segment meeting transcript into topics,Returns topic segments with summaries,1,medium,segmentation;meetings;summarization
+327,code_generation,Build CI/CD pipeline,Create complete CI/CD pipeline,Complete pipeline with testing and deployment,0,hard,cicd;devops;automation
+328,multi_tool,Competitor monitoring,Set up competitor monitoring system,Creates automated competitor tracking,3,medium,monitoring;competitive;automation
+329,code_generation,Implement model versioning,Add versioning to ML model lifecycle,Complete versioning with rollback,0,hard,ml;versioning;mlops
+330,web_search,Testing frameworks,Research testing frameworks for microservices,Returns framework comparison and recommendations,1,medium,testing;frameworks;microservices
+331,web_reading,Extract API endpoints,Extract API endpoints from documentation,Returns structured API endpoint list,1,medium,web;extraction;api
+332,embeddings,Hierarchical embeddings,Create hierarchical embedding space,Returns hierarchical embeddings with structure,1,hard,embeddings;hierarchy;structure
+333,classification,Bias detection in text,Detect various biases in text content,Returns bias analysis by category,1,hard,classification;bias;fairness
+334,code_generation,Create alert system,Build intelligent alert aggregation system,Complete alert system with deduplication,0,medium,alerts;monitoring;sre
+335,debugging,Debug API rate limit,Handle and debug rate limiting issues,Solution with exponential backoff,0,medium,debugging;rate-limiting;api
+336,code_generation,Implement model pipeline,Create end-to-end ML training pipeline,Complete pipeline with orchestration,0,hard,ml;pipeline;mlops
+337,web_search,Disaster recovery,Research disaster recovery best practices,Returns comprehensive DR strategies,1,medium,disaster-recovery;reliability;business-continuity
+338,embeddings,Embedding for recommendation,Optimize embeddings for recommendations,Returns recommendation-optimized embeddings,1,hard,embeddings;recommendations;optimization
+339,reranking,Fairness constraints,Apply fairness constraints to ranking,Returns fair ranking satisfying constraints,1,hard,reranking;fairness;constraints
+340,code_generation,Build data pipeline,Create scalable data processing pipeline,Complete pipeline with fault tolerance,0,hard,data-engineering;pipeline;scalability
+341,multi_tool,Market entry strategy,Develop market entry strategy,Researches market and creates entry plan,4,hard,strategy;market;business
+342,code_generation,Implement model governance,Add ML model governance framework,Complete governance with policies,0,hard,ml;governance;compliance
+343,web_search,Observability tools,Compare observability platform options,Returns detailed tool comparison,1,medium,observability;tools;monitoring
+344,web_reading,Extract breadcrumbs,Extract breadcrumb navigation from page,Returns hierarchical breadcrumb structure,1,easy,web;extraction;navigation
+345,embeddings,Task-specific embeddings,Create embeddings optimized for specific task,Returns task-optimized embeddings,1,hard,embeddings;optimization;task-specific
+346,classification,Formality classification,Classify text formality and register,Returns formality level with linguistic features,1,medium,classification;linguistics;style
+347,segmentation,Summarization boundaries,Identify optimal boundaries for summarization,Returns document segments for summarization,1,medium,segmentation;summarization;boundaries
+348,code_generation,Create testing framework,Build comprehensive testing framework,Complete framework with fixtures and mocking,0,hard,testing;framework;automation
+349,debugging,Debug race condition,Find and fix subtle race condition,Analysis and corrected synchronization,0,hard,debugging;concurrency;race-condition
+350,code_generation,Implement shadow mode,Add shadow mode for testing changes,Complete shadow deployment system,0,hard,testing;deployment;shadow
+351,web_search,Incident response,Research incident response procedures,Returns incident response playbooks,1,medium,incident-response;sre;security
+352,embeddings,Embedding-based retrieval,Build neural retrieval system,Returns complete retrieval system,1,hard,embeddings;retrieval;search
+353,reranking,Personalized diversity,Balance personalization and diversity in ranking,Returns personalized diverse ranking,1,hard,reranking;personalization;diversity
+354,code_generation,Build model monitoring,Create comprehensive model monitoring,Complete monitoring with dashboards,0,hard,ml;monitoring;observability
+355,multi_tool,Due diligence checklist,Create technical due diligence checklist,Researches and compiles comprehensive checklist,3,medium,due-diligence;checklist;technical
+356,code_generation,Implement feature validation,Add validation for ML features,Complete validation with statistical tests,0,hard,ml;validation;data-quality
+357,web_search,Zero trust architecture,Research zero trust security architecture,Returns comprehensive zero trust guide,1,hard,security;zero-trust;architecture
+358,web_reading,Extract image captions,Extract image captions and alt text from page,Returns structured image data,1,easy,web;extraction;images
+359,embeddings,Embedding compression techniques,Apply advanced compression to embeddings,Returns compressed embeddings with quality metrics,1,hard,embeddings;compression;optimization
+360,classification,Author attribution,Attribute text to likely author,Returns author prediction with confidence,1,hard,classification;authorship;forensics
+361,segmentation,Legal document segmentation,Segment legal document into sections,Returns structured legal document sections,1,hard,segmentation;legal;documents
+362,code_generation,Create load balancer,Build custom load balancing logic,Complete load balancer with algorithms,0,hard,load-balancing;infrastructure;networking
+363,debugging,Debug memory leak in production,Analyze production memory leak,Root cause analysis and fix,0,hard,debugging;memory;production
+364,code_generation,Implement model interpretability,Add interpretability tools to ML system,Complete interpretability dashboard,0,hard,ml;interpretability;explainability
+365,web_search,SLO examples,Find SLO examples for different services,Returns SLO templates and examples,1,medium,slo;sre;reliability
+366,embeddings,Neural architecture search,Search for optimal embedding architecture,Returns optimized architecture with performance,1,hard,embeddings;nas;optimization
+367,reranking,Implicit feedback ranking,Rank using implicit user feedback,Returns ranking model trained on implicit signals,1,hard,reranking;implicit-feedback;ml
+368,code_generation,Build event sourcing,Implement event sourcing pattern,Complete event sourcing with projections,0,hard,event-sourcing;architecture;patterns
+369,multi_tool,Technology roadmap,Create technology roadmap for product,Researches trends and creates roadmap,4,hard,strategy;roadmap;technology
+370,code_generation,Implement model calibration,Add calibration to model predictions,Complete calibration with evaluation,0,hard,ml;calibration;reliability
+371,web_search,Performance benchmarks,Find performance benchmarks for databases,Returns comprehensive benchmark data,1,medium,benchmarks;databases;performance
+372,web_reading,Extract video metadata,Extract video metadata from page,Returns structured video information,1,easy,web;extraction;video
+373,embeddings,Self-supervised embeddings,Train embeddings with self-supervision,Returns self-supervised embeddings,1,hard,embeddings;self-supervised;ml
+374,classification,Medical text classification,Classify medical text into categories,Returns medical classifications,1,hard,classification;medical;healthcare
+375,code_generation,Create chaos experiments,Build chaos engineering experiments,Complete chaos testing suite,0,hard,chaos-engineering;testing;reliability
+376,debugging,Debug distributed transaction,Debug failed distributed transaction,Analysis and fix for distributed consistency,0,hard,debugging;distributed;transactions
+377,code_generation,Implement multi-tenancy,Add multi-tenant architecture,Complete multi-tenancy with isolation,0,hard,multi-tenancy;architecture;saas
+378,web_search,Capacity planning,Research capacity planning methodologies,Returns comprehensive capacity planning guide,1,medium,capacity-planning;sre;infrastructure
+379,embeddings,Dynamic embeddings,Create embeddings that evolve over time,Returns temporal embeddings,1,hard,embeddings;temporal;dynamic
+380,reranking,Slate-aware ranking,Optimize entire result slate not individual items,Returns slate-optimized ranking,1,hard,reranking;slate;optimization
+381,segmentation,Entity-based segmentation,Segment text based on entity mentions,Returns entity-coherent segments,1,hard,segmentation;entities;coherence
+382,code_generation,Build experimentation platform,Create A/B testing platform,Complete platform with assignment and analysis,0,hard,experimentation;ab-testing;analytics
+383,multi_tool,SWOT analysis,Conduct comprehensive SWOT analysis,Researches and creates detailed SWOT,3,medium,strategy;swot;analysis
+384,code_generation,Implement quotas,Add quota management system,Complete quota system with enforcement,0,medium,quotas;limits;governance
+385,web_search,Cloud native patterns,Research cloud native architecture patterns,Returns pattern catalog with examples,1,medium,cloud-native;patterns;architecture
+386,web_reading,Extract download links,Extract all download links from page,Returns categorized download links,1,easy,web;extraction;downloads
+387,embeddings,Embedding for clustering,Optimize embeddings for clustering tasks,Returns clustering-optimized embeddings,1,hard,embeddings;clustering;optimization
+388,classification,Argument quality,Assess quality of arguments in text,Returns argument quality metrics,1,hard,classification;argumentation;quality
+389,code_generation,Create service mesh,Implement service mesh for microservices,Complete service mesh configuration,0,hard,service-mesh;microservices;infrastructure
+390,debugging,Debug gRPC issues,Troubleshoot gRPC communication problems,Analysis and fix for gRPC issues,0,medium,debugging;grpc;rpc
+391,code_generation,Implement model retraining,Add automated model retraining pipeline,Complete retraining with scheduling,0,hard,ml;retraining;automation
+392,web_search,Database migration,Find database migration best practices,Returns comprehensive migration strategies,1,medium,database;migration;best-practices
+393,embeddings,Embedding for generation,Use embeddings to guide text generation,Returns generation system with embedding guidance,1,hard,embeddings;generation;guidance
+394,reranking,Multi-stakeholder ranking,Optimize ranking for multiple stakeholders,Returns ranking balancing stakeholder interests,1,hard,reranking;multi-objective;stakeholders
+395,code_generation,Build data lineage,Create automated data lineage tracking,Complete lineage system with visualization,0,hard,data-engineering;lineage;governance
+396,multi_tool,Investment thesis,Develop detailed investment thesis,Researches and writes comprehensive thesis,4,hard,finance;investment;analysis
+397,code_generation,Implement traffic splitting,Add traffic splitting for testing,Complete traffic management system,0,hard,traffic-splitting;deployment;testing
+398,web_search,Edge computing,Research edge computing use cases,Returns edge computing patterns and examples,1,medium,edge-computing;architecture;iot
+399,web_reading,Extract certifications,Extract certifications and awards from page,Returns structured certification data,1,easy,web;extraction;credentials
+400,embeddings,Embedding stability,Ensure embedding stability across versions,Returns stable embeddings with versioning,1,hard,embeddings;stability;versioning
+401,classification,Cognitive complexity,Measure cognitive complexity of text,Returns complexity metrics and readability,1,medium,classification;complexity;readability
+402,segmentation,Multi-perspective segmentation,Segment from multiple analytical perspectives,Returns segments with different views,1,hard,segmentation;multi-perspective;analysis
+403,code_generation,Create feature store API,Build API for ML feature store,Complete API with feature serving,0,hard,ml;api;feature-store
+404,debugging,Debug connection pool,Fix connection pool exhaustion,Analysis and pool configuration fix,0,medium,debugging;connections;pooling
+405,code_generation,Implement circuit breaker pattern,Add circuit breaker for resilience,Complete circuit breaker with monitoring,0,medium,resilience;circuit-breaker;patterns
+406,web_search,GitOps practices,Research GitOps best practices,Returns comprehensive GitOps guide,1,medium,gitops;devops;best-practices
+407,embeddings,Embedding alignment,Align embeddings across different models,Returns aligned embedding spaces,1,hard,embeddings;alignment;transfer
+408,reranking,Temporal dynamics,Model temporal dynamics in ranking,Returns time-aware ranking model,1,hard,reranking;temporal;dynamics
+409,code_generation,Build recommendation system,Create collaborative filtering recommender,Complete recommendation system,0,hard,recommendations;ml;collaborative-filtering
+410,multi_tool,Regulatory compliance report,Create compliance assessment report,Researches regulations and assesses compliance,4,hard,compliance;regulatory;report
+411,code_generation,Implement data masking,Add data masking for PII,Complete masking with policy enforcement,0,hard,privacy;security;pii
+412,web_search,Service mesh comparison,Compare Istio vs Linkerd vs Consul,Returns detailed service mesh comparison,1,medium,service-mesh;comparison;infrastructure
+413,web_reading,Extract related articles,Extract related article links and summaries,Returns related content structure,1,medium,web;extraction;related-content
+414,embeddings,Prototype learning,Learn prototypical embeddings for classes,Returns prototype embeddings,1,hard,embeddings;prototypes;few-shot
+415,classification,Stance detection,Detect stance (favor oppose neutral) on topic,Returns stance classification,1,hard,classification;stance;argumentation
+416,segmentation,Hierarchical document structure,Extract hierarchical structure from document,Returns document tree structure,1,hard,segmentation;hierarchy;document-analysis
+417,code_generation,Create model serving API,Build production model serving API,Complete API with versioning and monitoring,0,hard,ml;api;serving
+418,debugging,Debug webhook failures,Troubleshoot webhook delivery failures,Analysis and retry mechanism fix,0,medium,debugging;webhooks;reliability
+419,code_generation,Implement feature toggles,Add feature toggle management,Complete toggle system with targeting,0,medium,feature-toggles;configuration;deployment
+420,web_search,SRE practices,Research site reliability engineering practices,Returns comprehensive SRE guide,1,medium,sre;reliability;best-practices
+421,embeddings,Embedding robustness,Make embeddings robust to adversarial inputs,Returns robust embeddings with evaluation,1,hard,embeddings;robustness;adversarial
+422,reranking,Budget allocation ranking,Allocate ranking budget optimally,Returns optimal budget allocation strategy,1,hard,reranking;optimization;budget
+423,code_generation,Build streaming analytics,Create real-time streaming analytics,Complete streaming system with windowing,0,hard,streaming;analytics;real-time
+424,multi_tool,Technology trends report,Create emerging technology trends report,Researches and synthesizes technology trends,3,medium,research;trends;technology
+425,code_generation,Implement observability,Add comprehensive observability,Complete observability with traces metrics logs,0,hard,observability;monitoring;tracing
+426,web_search,API design guidelines,Find API design best practices,Returns comprehensive API design guide,1,medium,api;design;best-practices
+427,web_reading,Extract pagination,Extract paginated content from website,Returns complete paginated content,1,medium,web;extraction;pagination
+428,embeddings,Multi-task embeddings,Train embeddings for multiple tasks,Returns multi-task embeddings,1,hard,embeddings;multi-task;transfer
+429,classification,Subjectivity detection,Detect subjective vs objective statements,Returns subjectivity classification,1,medium,classification;subjectivity;nlp
+430,code_generation,Create deployment automation,Build automated deployment system,Complete deployment automation,0,hard,deployment;automation;cicd
+431,debugging,Debug cache stampede,Fix cache stampede problem,Solution with cache warming and locking,0,medium,debugging;caching;performance
+432,code_generation,Implement progressive rollout,Add progressive rollout capability,Complete progressive deployment system,0,hard,deployment;progressive;rollout
+433,web_search,Infrastructure as code,Research IaC tools and practices,Returns comprehensive IaC comparison,1,medium,iac;infrastructure;devops
+434,embeddings,Embedding pooling strategies,Compare embedding pooling methods,Returns optimal pooling strategy,1,hard,embeddings;pooling;optimization
+435,reranking,Click model ranking,Model click behavior for ranking,Returns click-based ranking model,1,hard,reranking;click-models;implicit-feedback
+436,segmentation,Quotation extraction,Extract and attribute quotations from text,Returns structured quotations with speakers,1,medium,segmentation;quotations;extraction
+437,code_generation,Build notification service,Create multi-channel notification service,Complete notification system,0,hard,notifications;messaging;architecture
+438,multi_tool,Market sizing,Perform market sizing analysis,Calculates TAM SAM SOM with sources,3,hard,market-sizing;analysis;business
+439,code_generation,Implement data retention,Add data retention policies,Complete retention system with automation,0,medium,retention;compliance;data-governance
+440,web_search,Container orchestration,Compare Kubernetes vs Docker Swarm vs Nomad,Returns detailed orchestration comparison,1,medium,containers;orchestration;comparison
+441,web_reading,Extract form fields,Extract form fields and structure from page,Returns structured form schema,1,medium,web;extraction;forms
+442,embeddings,Embedding-based QA,Build question answering with embeddings,Returns QA system using retrieval,1,hard,embeddings;qa;retrieval
+443,classification,Credibility assessment,Assess source credibility,Returns credibility score with reasoning,1,hard,classification;credibility;trust
+444,code_generation,Create batch processing,Build distributed batch processing system,Complete batch system with orchestration,0,hard,batch;distributed;processing
+445,debugging,Debug serialization bug,Fix protocol buffer serialization issue,Analysis and corrected serialization,0,medium,debugging;protobuf;serialization
+446,code_generation,Implement model versioning API,Add API for model version management,Complete versioning API,0,hard,ml;api;versioning
+447,web_search,Cost optimization strategies,Research cloud cost optimization,Returns comprehensive cost strategies,1,medium,cloud;cost;optimization
+448,embeddings,Embedding fine-tuning,Fine-tune embeddings on domain data,Returns fine-tuned embeddings with evaluation,1,hard,embeddings;fine-tuning;transfer
+449,reranking,Cold-start solution,Solve cold start in ranking system,Returns cold start handling strategy,1,hard,reranking;cold-start;initialization
+450,code_generation,Build ML pipeline,Create end-to-end ML pipeline,Complete pipeline with all stages,0,hard,ml;pipeline;automation
+451,multi_tool,Competitive positioning,Develop competitive positioning strategy,Analyzes competition and creates positioning,3,hard,strategy;positioning;competitive
+452,code_generation,Implement audit trail,Add comprehensive audit logging,Complete audit system with immutability,0,hard,audit;security;compliance
+453,web_search,Scaling strategies,Research horizontal scaling patterns,Returns comprehensive scaling strategies,1,medium,scaling;architecture;patterns
+454,web_reading,Extract comments,Extract user comments from page,Returns structured comments with metadata,1,medium,web;extraction;comments
+455,embeddings,Embedding regularization,Apply regularization to embedding training,Returns regularized embeddings,1,hard,embeddings;regularization;training
+456,classification,Propaganda detection,Detect propaganda techniques in text,Returns propaganda classification,1,hard,classification;propaganda;misinformation
+457,segmentation,Discourse segmentation,Segment by discourse relations,Returns discourse-based segments,1,hard,segmentation;discourse;relations
+458,code_generation,Create monitoring dashboard,Build operational monitoring dashboard,Complete dashboard with metrics,0,hard,monitoring;dashboard;observability
+459,debugging,Debug eventual consistency,Debug consistency issues in distributed system,Analysis of consistency violations and fix,0,hard,debugging;distributed;consistency
+460,code_generation,Implement blue-green database,Add blue-green deployment for database,Complete database migration strategy,0,hard,database;deployment;migration
+461,web_search,Security scanning tools,Research security scanning tool options,Returns tool comparison and recommendations,1,medium,security;scanning;tools
+462,embeddings,Embedding-based matching,Build semantic matching system,Returns matching system using embeddings,1,hard,embeddings;matching;similarity
+463,reranking,Query performance prediction,Predict query performance for ranking,Returns performance prediction model,1,hard,reranking;prediction;performance
+464,code_generation,Build data catalog API,Create API for data catalog,Complete catalog API with search,0,hard,data-engineering;api;catalog
+465,multi_tool,Product roadmap,Create product development roadmap,Researches and creates prioritized roadmap,4,hard,product;roadmap;planning
+466,code_generation,Implement sampling strategies,Add smart data sampling,Complete sampling with statistical guarantees,0,hard,sampling;data;statistics
+467,web_search,Backup strategies,Research backup and recovery strategies,Returns comprehensive backup guide,1,medium,backup;disaster-recovery;reliability
+468,web_reading,Extract structured data,Extract microdata or JSON-LD from page,Returns structured data,1,medium,web;extraction;structured-data
+469,embeddings,Embedding evaluation,Evaluate embedding quality comprehensively,Returns evaluation metrics and analysis,1,hard,embeddings;evaluation;benchmarking
+470,classification,Implicit sentiment,Detect implicit sentiment in text,Returns implicit sentiment classification,1,hard,classification;sentiment;nuanced
+471,code_generation,Create data validation API,Build API for data validation rules,Complete validation API,0,medium,api;validation;data-quality
+472,debugging,Debug transaction isolation,Debug transaction isolation issues,Analysis and corrected isolation level,0,hard,debugging;database;transactions
+473,code_generation,Implement feature importance,Add feature importance tracking,Complete importance analysis system,0,hard,ml;features;interpretability
+474,web_search,DevSecOps practices,Research DevSecOps implementation,Returns comprehensive DevSecOps guide,1,medium,devsecops;security;devops
+475,embeddings,Embedding aggregation,Aggregate embeddings across documents,Returns document-level embeddings,1,medium,embeddings;aggregation;documents
+476,reranking,Fairness metrics,Measure fairness in ranking results,Returns fairness metrics and analysis,1,hard,reranking;fairness;metrics
+477,segmentation,Temporal segmentation,Segment time-series data semantically,Returns temporal segments,1,hard,segmentation;time-series;temporal
+478,code_generation,Build event processing,Create complex event processing system,Complete CEP with pattern matching,0,hard,cep;events;streaming
+479,multi_tool,Risk mitigation plan,Create risk mitigation strategy,Identifies risks and creates mitigation plan,3,hard,risk;mitigation;strategy
+480,code_generation,Implement model governance API,Add API for model governance,Complete governance API,0,hard,ml;governance;api
+481,web_search,Migration patterns,Research microservices migration patterns,Returns migration pattern catalog,1,medium,migration;microservices;patterns
+482,web_reading,Extract affiliate links,Extract affiliate links and tracking codes,Returns structured affiliate data,1,easy,web;extraction;affiliate
+483,embeddings,Embedding adaptation online,Adapt embeddings online during inference,Returns adaptive embeddings,1,hard,embeddings;online;adaptation
+484,classification,Satire detection,Detect satirical content,Returns satire classification,1,hard,classification;satire;humor
+485,code_generation,Create change tracking,Build change data capture system,Complete CDC with event streaming,0,hard,cdc;change-tracking;streaming
+486,debugging,Debug distributed deadlock,Resolve distributed deadlock,Analysis and deadlock resolution,0,hard,debugging;distributed;deadlock
+487,code_generation,Implement model ensembling,Add model ensemble inference,Complete ensemble system,0,hard,ml;ensemble;inference
+488,web_search,Chaos engineering,Research chaos engineering tools,Returns chaos engineering toolkit comparison,1,medium,chaos-engineering;tools;reliability
+489,embeddings,Knowledge distillation embeddings,Distill knowledge into smaller embeddings,Returns distilled embeddings,1,hard,embeddings;distillation;compression
+490,reranking,Preference learning,Learn ranking from preference feedback,Returns learned ranking model,1,hard,reranking;preferences;learning
+491,code_generation,Build anomaly detection API,Create API for anomaly detection,Complete anomaly detection API,0,hard,api;anomaly-detection;ml
+492,multi_tool,Exit strategy,Develop business exit strategy,Analyzes options and creates exit plan,4,hard,strategy;exit;business
+493,code_generation,Implement model testing,Add automated model testing,Complete testing framework for ML,0,hard,ml;testing;quality
+494,web_search,Policy as code,Research policy as code approaches,Returns policy as code tools and patterns,1,medium,policy;security;compliance
+495,web_reading,Extract copyright,Extract copyright and licensing info from page,Returns structured licensing data,1,easy,web;extraction;copyright
+496,embeddings,Embedding explanation,Explain embedding similarity,Returns interpretable similarity explanations,1,hard,embeddings;explanation;interpretability
+497,classification,Irony detection,Detect ironic statements,Returns irony classification,1,hard,classification;irony;pragmatics
+498,code_generation,Create model registry API,Build API for ML model registry,Complete registry API with versioning,0,hard,ml;api;registry
+499,debugging,Debug cascading failures,Analyze and prevent cascading failures,Failure analysis and resilience improvements,0,hard,debugging;resilience;distributed
+500,multi_tool,Strategic planning,Create comprehensive strategic plan,Researches environment and creates strategy,4,hard,strategy;planning;business
