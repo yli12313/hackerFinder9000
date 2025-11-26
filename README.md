@@ -1,6 +1,6 @@
 # Detecting Piecewise Cyber Espionage in Model APIs
 
-### Paper published and submitted to Apart Research.
+### [Paper](https://github.com/yli12313/Defense-Acceleration-Hackathon-2025/blob/main/static/Def_Acc_Hackathon_2025.pdf) published and submitted to Apart Research.
 
 **Team**: Arthur Colle, Alex Reinthal, David Williams-King, Lihn Le, Yingquan Li 
 
